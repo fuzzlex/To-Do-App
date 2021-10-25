@@ -21,12 +21,13 @@ addEL.addEventListener("click", ()=>{
 
 function loader() {
     let inputText = document.getElementById("inputText").value;
+    let sontext = inputText.toUpperCase();
     toDo.innerHTML += 
     `<div id="check${y}">
     <div  class="checkboxer" id="checkboxid">
                    
     <input type="checkbox" id="first${y}">
-    <label id="label${y}" for="first">${inputText}</label>
+    <label id="label${y}" for="first">${sontext}</label>
     <button id="delBut${y}" ><img src="delete.svg" alt=""></button>
 
 </div></div>`
