@@ -1,6 +1,6 @@
 let addEL = document.getElementById("add");
 let toDo = document.querySelector(".to-do-list_todos");
-let formEl = document.getElementById("formEl");
+let form = document.querySelector('form')
 let x = 0;
 let y = 0;
 let a = 0;
@@ -9,13 +9,17 @@ let a = 0;
   let d = 0;
  let e = 0;
 let f = 0;
+let g=0;
 
 
 addEL.addEventListener("click", ()=>{
    
+
         loader(); 
-      
-             
+       
+     
+
+         
       
 }); 
 
@@ -26,13 +30,18 @@ function loader() {
     `<div id="check${y}">
     <div  class="checkboxer" id="checkboxid">
                    
-    <input type="checkbox" id="first${y}">
+    <input   type="checkbox" id="first${y}">
     <label id="label${y}" for="first">${sontext}</label>
-    <button id="delBut${y}" ><img src="delete.svg" alt=""></button>
+    <button class="delclick" id="delBut${y}" ><img src="delete.svg" alt=""></button>
 
 </div></div>`
-y++;
+  
+form.reset();
+y++; 
 
+
+
+    
 
 
 
@@ -50,7 +59,7 @@ firstEl0.addEventListener("click" , ()=> {
 delButEl0.addEventListener("click" , ()=> {
 
     checkel0.innerHTML = "";
-    y--;
+  
 });
 
 
@@ -69,7 +78,8 @@ firstEl1.addEventListener("click" , ()=> {
 delButEl1.addEventListener("click" , ()=> {
 
     checkel1.innerHTML = "";
-    y--;
+    y -=2;
+  
 });
 let firstEl2 = document.getElementById(`first2`);
 let checkel2 = document.getElementById(`check2`);
@@ -86,7 +96,7 @@ firstEl2.addEventListener("click" , ()=> {
 delButEl2.addEventListener("click" , ()=> {
 
     checkel2.innerHTML = "";
-    y--;
+  
 });
 let firstEl3 = document.getElementById(`first3`);
 let checkel3 = document.getElementById(`check3`);
@@ -103,7 +113,7 @@ firstEl3.addEventListener("click" , ()=> {
 delButEl3.addEventListener("click" , ()=> {
 
     checkel3.innerHTML = "";
-    y--;
+  
 });
 let firstEl4 = document.getElementById(`first4`);
 let checkel4 = document.getElementById(`check4`);
@@ -120,7 +130,7 @@ firstEl4.addEventListener("click" , ()=> {
 delButEl4.addEventListener("click" , ()=> {
 
     checkel4.innerHTML = "";
-    y--;
+ 
 });
 let firstEl5 = document.getElementById(`first5`);
 let checkel5 = document.getElementById(`check5`);
@@ -137,7 +147,7 @@ firstEl5.addEventListener("click" , ()=> {
 delButEl5.addEventListener("click" , ()=> {
 
     checkel5.innerHTML = "";
-    y--;
+ 
 });
 let firstEl6 = document.getElementById(`first6`);
 let checkel6 = document.getElementById(`check6`);
@@ -154,8 +164,24 @@ firstEl6.addEventListener("click" , ()=> {
 delButEl6.addEventListener("click" , ()=> {
 
     checkel6.innerHTML = "";
-    y--;
+ 
+});
+let firstEl7 = document.getElementById(`first7`);
+let checkel7 = document.getElementById(`check7`);
+let delButEl7 = document.getElementById(`delBut7`);
+let labelEl7 = document.getElementById(`label7`);
+firstEl7.addEventListener("click" , ()=> {
+    
+    if(g == 0){
+   labelEl7.style.textDecoration = "line-through";g =1;}
+   else{labelEl7.style.textDecoration = "none"; g =0}
+
+
+});
+delButEl7.addEventListener("click" , ()=> {
+
+    checkel7.innerHTML = "";
+  
 });
 
-console.log(y)
 }
