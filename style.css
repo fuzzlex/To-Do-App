@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700&display=swap');
 
+
 *{
     font-family: 'Nunito', sans-serif;
     margin:0px;
@@ -93,8 +94,8 @@
 }
 .checkboxer{
     
-   width: 25rem;
-   height: 2rem;
+   max-width: 25rem;
+   
    display: flex;
    justify-content: flex-start;
    align-items: center;
@@ -102,8 +103,11 @@
    border-radius: 2rem;
    margin: 1rem;
    position: relative;
+      
   
-
+}
+.checkboxer button{
+    align-self: center;
 }
 .checkboxer input{
     width: 2rem;
@@ -111,23 +115,40 @@
     margin-left: 1rem;
    
 }
-.checkboxer input:checked::after{
-    content: "";
-    text-decoration: line-through;
-    background: aqua;
+
+
+.fa-thumbs-up{
+
+margin: 0.3rem 1rem;
+cursor: pointer;
+padding: 0.5rem;
+
+}
+.okey{
+    border: none;
 }
 .checkboxer label{
+    width: 20rem;
     font-weight: 900;
+    word-wrap: break-word;
+
 }
 .checkboxer img{
-    width: 2.5rem;
-    height: 2rem;
+
     position: absolute;
     right: 0;
-    background-color: rgb(255, 230, 0);
     border: none;
     border-radius: 0 1rem 0 ;
     cursor: pointer;
+    padding: 0 0.5rem;
 
 }
+.complated{
+    text-decoration: line-through;
+    color: red;
+    transform: rotateZ(-360deg);
+    transition: .5s;
 
+
+
+}
