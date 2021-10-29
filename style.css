@@ -94,8 +94,7 @@
 }
 .checkboxer{
     
-   max-width: 25rem;
-   
+   max-width: 25rem;   
    display: flex;
    justify-content: flex-start;
    align-items: center;
@@ -103,6 +102,10 @@
    border-radius: 2rem;
    margin: 1rem;
    position: relative;
+   top: 0rem;
+  
+  
+  
       
   
 }
@@ -121,6 +124,8 @@
 
 margin: 0.3rem 1rem;
 cursor: pointer;
+border: 2px solid orange;
+border-radius: 50%;
 padding: 0.5rem;
 
 }
@@ -141,14 +146,23 @@ padding: 0.5rem;
     border-radius: 0 1rem 0 ;
     cursor: pointer;
     padding: 0 0.5rem;
+   
 
 }
 .complated{
     text-decoration: line-through;
-    color: red;
-    transform: rotateZ(-360deg);
+    color: orangered;
+    transform: rotateY(-360deg);
     transition: .5s;
+}
+.changed1{
+    background-color: orange;
+    transition: background-color 2s;
+}
+.changed2{
 
-
+top: -50rem;
+transition: top 1s;
 
 }
+
