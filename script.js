@@ -20,8 +20,9 @@ function loader() {
     <i class="far fa-thumbs-up"></i>
     <label class="okey" >${sontext}</label> 
     <img class="delete" src="delete.svg" alt="">
-</div>`
+</div>`;
 formEl.reset();
+
 }
 
 
@@ -30,7 +31,7 @@ formEl.reset();
 
 newtodosDel.addEventListener('click', (a) => {
     if (a.target.classList.contains('delete')) {
-     a.target.parentElement.classList.toggle("changed2");
+     a.target.parentElement.classList.toggle("changed2");    
    
        }
 

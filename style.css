@@ -16,7 +16,7 @@
    
 }
 .to-do-list{
-    width: 30rem;
+    width: 25rem;
     height: 35rem;
     display: flex;
     flex-direction: column;
@@ -28,15 +28,14 @@
     font-size: 2.5rem;
     color: rgb(210, 105, 30);
 }
-.to-do-list_input{
-    width: 30rem;
+.to-do-list_input {
+    width: 23rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 2rem ;
-
 }
 .to-do-list_input input{
-    width: 19rem;
+    width: 15rem;
     height: 2.5rem;
     border: none;
     box-shadow:2px -2px rgb(247, 247, 247), 4px -4px rgb(109, 46, 98);
@@ -67,7 +66,7 @@
 }
 .to-do-list_input button{
     height: 2.5rem;
-    width:5rem;
+    width:3rem;
     background-color: rgba(210, 105, 30,.5);
     color: rgb(255, 255, 255);
     box-shadow: 2px -2px rgb(247, 247, 247), 4px -4px rgb(109, 46, 98);
@@ -82,14 +81,14 @@
     cursor: pointer;
 }
 .to-do-list_todos{
-    width: 28rem;
+    width: 23rem;
     height: 30rem;
     background-color:  rgba(210, 105, 30,.5);
     align-self: center;
     margin: 1rem;
     border-radius: 2rem;  
     box-shadow: 2px -2px rgb(247, 247, 247), 4px -4px rgb(109, 46, 98);
-    transition: .5s;
+  
 
 }
 .checkboxer{
@@ -102,23 +101,8 @@
    border-radius: 2rem;
    margin: 1rem;
    position: relative;
-   top: 0rem;
-  
-  
-  
-      
-  
-}
-.checkboxer button{
-    align-self: center;
-}
-.checkboxer input{
-    width: 2rem;
-    height: 1rem;
-    margin-left: 1rem;
-   
-}
 
+}
 
 .fa-thumbs-up{
 
@@ -129,9 +113,7 @@ border-radius: 50%;
 padding: 0.5rem;
 
 }
-.okey{
-    border: none;
-}
+
 .checkboxer label{
     width: 20rem;
     font-weight: 900;
@@ -161,8 +143,7 @@ padding: 0.5rem;
 }
 .changed2{
 
-top: -50rem;
-transition: top 1s;
-
+display: none;
+transition: display 0.5s;
 }
 
